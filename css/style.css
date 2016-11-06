@@ -9,6 +9,10 @@ body {
     font-family: 'AR丸ゴシック体M';
     color: #24140e;
 }
+ul,li {
+    margin: 0px;
+    padding: 0px;
+}
 
 header {
   background-color: #004d25;
@@ -17,7 +21,8 @@ header {
 header li {
     list-style: none;
     margin-top: 24px;
-    vertical-align: bottom;
+    margin-bottom: 24px;
+    display: block;
 }
 
 .menu_btn {
@@ -55,7 +60,7 @@ header li {
     display: inline-block;
 }
 
-#concept_area {
+#concept_area, #shop_introduction_area {
     color: #fff9f5;
     font-weight: bold;
     background-color: #24140e;
