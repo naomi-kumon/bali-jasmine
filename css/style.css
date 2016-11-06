@@ -4,25 +4,92 @@ html {
   font-size: 62.5%;
 }
 
+body {
+    background-color: #fff9f5;
+    font-family: 'AR丸ゴシック体M';
+    color: #24140e;
+}
+
 header {
-  background: #004d25;
+  background-color: #004d25;
 }
 
-header .four columns menu{
-    float:left;
-    margin-top:10px;
+header li {
+    list-style: none;
+    margin-top: 24px;
+    vertical-align: bottom;
 }
 
-header .four columns logo {
-    display:block;
+.menu_btn {
+    float: left;
+}
+.logo_small{
     text-align: center;
 }
-
-header .four columns facebook {
-    float:right;
+.facebook {
+    float: right;
 }
+
 
 #top_slide_area {
     background-image: url(../images/title_back.jpg);
     background-size: cover;
+    margin-bottom: 8px;
 }
+
+.logo_top {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.down_arrow {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#top_slide_area ul {
+    width: 25%;
+}
+
+#top_slide_area li {
+    list-style: none;
+    display: inline-block;
+}
+
+#concept_area {
+    color: #fff9f5;
+    font-weight: bold;
+    background-color: #24140e;
+    background-size: cover;
+}
+
+.melati_line {
+    text-align: center;
+    padding-top: 80px;
+    
+}
+.ten columns {
+    text-align: center;
+}
+
+.image_photo {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.section_title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.concept_text {
+    padding-top: 0px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.news_text ul li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+	
