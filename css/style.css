@@ -9,9 +9,29 @@ body {
     font-family: 'AR丸ゴシック体M';
     color: #24140e;
 }
-ul,li {
-    margin: 0px;
-    padding: 0px;
+
+ul,li,h3,p,.columns {
+    margin: 0;
+}
+.text_center {
+    text-align: center;
+}
+
+.melati_line {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.melati_line_2 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.section_title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
 }
 
 header {
@@ -20,21 +40,23 @@ header {
 
 header li {
     list-style: none;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: inline-block;
 }
 
-.menu_btn {
+.menu_btn {/*メニュー*/
     float: left;
-}
-.logo_small{
-    text-align: center;
-}
-.facebook {
-    float: right;
+    width:10%;
 }
 
+.logo_small {/*ロゴ*/
+    width:80%;
+}
+.facebook {/*フェイスブック*/
+    float: right;
+    width:10%;
+}
 
 #top_slide_area {
     background-image: url(../images/title_back.jpg);
@@ -43,58 +65,96 @@ header li {
 }
 
 .logo_top {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .down_arrow {
-    text-align: center;
-    margin-bottom: 50px;
-}
-#top_slide_area ul {
-    width: 25%;
+    padding-bottom: 50px;
 }
 
 #top_slide_area li {
     list-style: none;
-    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 25%;
+    padding-bottom: 80px;
 }
 
-#concept_area, #shop_introduction_area {
+#concept_area, #branch_introduction_area, #our_staff {
     color: #fff9f5;
-    font-weight: bold;
     background-color: #24140e;
     background-size: cover;
 }
 
-.melati_line {
-    text-align: center;
-    padding-top: 80px;
-    
-}
-.ten columns {
+.concept_pict {
+    padding-bottom: 80px;
     text-align: center;
 }
 
-.image_photo {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    text-align: center;
-}
-.section_title {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    text-align: center;
-}
 .concept_text {
     padding-top: 0px;
     padding-bottom: 80px;
-    text-align: center;
+    font-size: 1.8rem;
 }
-.news_text ul li {
-    list-style: none;
-    text-decoration: none;
-    font-size: 22px;
+.news_text p{
+    font-size: 2.5rem;
     font-weight: bold;
 }
-	
+
+.news_text ul li {
+    list-style:none;
+}
+
+.news_text a{/*リンクされた文字*/
+    color: #24140e;
+    text-decoration:none;
+}
+.news_text a:link {/*未訪問のリンク*/
+    color: #24140e;
+    text-decoration:none;
+}
+.news_text a:visited {/*訪問後のリンク*/
+    color: #f5deb3;
+    text-decoration:none;
+}
+.news_text a:hover {/*マウスをのせたとき*/
+    color:#004d25;
+    text-decoration:underline;
+}
+.news_text a:active {/*クリック中*/
+    color: #f5deb3;
+    text-decoration:underline;
+}
+
+
+#branch_introduction_area .columns {
+    margin: 0;
+}
+.branch_pict {
+    width: 97%;
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+
+#our_staff .columns {
+    margin: 0;
+}
+.staff_copy {
+    font-size: 2.0rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.staff_copy,.staff_pict,.staff_text {
+    width:97%;
+}
+
+.staff_text {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+footer .copy{
+    background-color: #004d25;
+    padding: 20px 0 10px 0;
+}
