@@ -38,10 +38,10 @@ header {
   background-color: #004d25;
 }
 
-header li {
+header nav ul li {
     list-style: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     display: inline-block;
 }
 
@@ -56,6 +56,7 @@ header li {
 .facebook {/*フェイスブック*/
     float: right;
     width:10%;
+    text-align: right;
 }
 
 #top_slide_area {
@@ -84,7 +85,6 @@ header li {
 #concept_area, #branch_introduction_area, #our_staff {
     color: #fff9f5;
     background-color: #24140e;
-    background-size: cover;
 }
 
 .concept_pict {
@@ -97,36 +97,34 @@ header li {
     padding-bottom: 80px;
     font-size: 1.8rem;
 }
-.news_text p{
+.news_text p {
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+.news_text span {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 15px;
+    
 }
 
 .news_text ul li {
     list-style:none;
 }
 
-.news_text a{/*リンクされた文字*/
-    color: #24140e;
-    text-decoration:none;
-}
-.news_text a:link {/*未訪問のリンク*/
+.news_text a:link {/*ココがなにもされてない状態リンク*/
     color: #24140e;
     text-decoration:none;
 }
 .news_text a:visited {/*訪問後のリンク*/
-    color: #f5deb3;
+    color: #ebab34;
     text-decoration:none;
 }
 .news_text a:hover {/*マウスをのせたとき*/
     color:#004d25;
     text-decoration:underline;
 }
-.news_text a:active {/*クリック中*/
-    color: #f5deb3;
-    text-decoration:underline;
-}
-
 
 #branch_introduction_area .columns {
     margin: 0;
@@ -137,10 +135,49 @@ header li {
     padding: 80px 0 80px 0;
 }
 
+#menu_area {/*仮の色*/
+    background-color: #ebab34;
+    
+}
+
 .google_map {
     border: solid 5px #24140e;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.branch_address {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.address {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.office_hour {
+    display: block;
+    float: right;
+    color: #fff9f5;
+    font-weight: bold;
+    background-color: #24140e;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.office_hour p {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.office_hour span {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+.close {
+    margin-left: 30px;
 }
 
 .staff_copy {
