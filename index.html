@@ -9,24 +9,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_sp.css" media="(max-width: 550px)">
+    <link rel="stylesheet" href="css/style.css" media="print,screen and (min-width: 549px)">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
     <header>
-        <div id="header_pc">
+        <div id="header_in">
             <div class="container">
                 <div class="row">
                     <nav class="twelve columns">
                         <ul>
-                            <li class="menu_btn"><img class="u-max-full-width" src="images/menu.png" alt="Menu"></li>
-                            <li class="logo_small text_center"><a href="#header_pc"><img class="u-max-full-width" src="images/logo_small.png" alt="Bali Jasmine"></a></li>
-                            <li class="facebook"> <a href="https://www.facebook.com/"><img class="u-max-full-width" src="images/facebook.png" alt="Facebook"></a></li>
+                            <li class="navi_btn"><i class="fa fa-bars" aria-label="ナビゲーション"></i></li>
+                            <li class="logo_small"><a href="#header_pc"><img class="u-max-full-width" src="images/logo_small.png" alt="Bali Jasmine"></a></li>
+                            <li class="facebook"> <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-label="フェイスブック"></i></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
+        </div>
+        
+        <div id="grand_navi">
+        <nav class="text_center">
+            <ul>
+                <li><a href="#what's_new">news</a></li>
+                <li><a href="#branch_introduction">店舗紹介</a></li>
+                <li><a href="#location">location</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
         </div>
     </header>
 
@@ -53,7 +66,7 @@
             </div>
     </section>
     
-    <section id="concept_area">
+    <section id="concept">
         
         <div class="melati_line">
             <img class="u-max-full-width" src="images/melati_line.png"></img>
@@ -78,7 +91,7 @@
             <img class="u-max-full-width" src="images/melati_line.png">
     </div>
     
-    <section id="What's_new_area">
+    <section id="what's_new">
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
@@ -101,7 +114,7 @@
             <img class="u-max-full-width" src="images/melati_line.png">
     </div>
     
-    <section id="branch_introduction_area">
+    <section id="branch_introduction">
         <div class="container">
             <div class="row">        
                 <div class="twelve columns section_title">
@@ -121,35 +134,84 @@
         </div>
     </section>
     
-    <section id="menu_area">
+    <section id="menu">
         <div class="container">
             <div class="row">
                 <div class="twelve columns section_title">
                     <img class="u-max-full-width" src="images/menu_title.png" alt="メニュー">
                 </div>
                 
-                <div class="twelve columns menu_type">
-                    <p>インドネシア料理</p>
-                    <p>インド料理</p>
-                    <p>ランチ</p>
-                    <p>コース</p>
-                    <p>ドリンク</p>
-                    
+                <nav class="twelve columns menu_select">
+                    <ul>
+                        <li><a href=""><p>インドネシア料理</p></a></li>
+                        <li><a href=""><p>インド料理</p></a></li>
+                        <li><a href=""><p>ランチ</p></a></li>
+                        <li><a href=""><p>コース</p></a></li>
+                        <li><a href=""><p>ドリンク</p></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="container black_boad">
+            <div class="row">
+                <div class="twelve columns tosayamada_menu text_center">
+                    <img class="u-max-full-width" src="images/tosayamada_bb.png" alt="土佐山田店">
                 </div>
-                
+            </div>
+            
+            <div class="row">
                 <div class="five columns menu_pict">
                     <img class="u-max-full-width" src="images/menu_photo.png" alt="メニュー写真">
                 </div>
                 
-                <div class="seven columns">
-                    <div class="menu_description">
-                        <img class="u-max-full-width" src="images/menu_text.png" alt="メニューの名前">
+                <div class="seven columns menu_description">
+                    <div class="menu_title text_center">
+                        <img class="u-max-full-width menu_name text_center" src="images/menu_text.png" alt="メニューの名前">
+                    </div>
+                    <div class="menu_title_japanese">
                         <p>チキンティッカ<span>￥９００</span></p>
-                        <p>メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。</p>
+                    </div>
+                    <div class="description text_center">
+                        <p>メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。</p>
                     </div>
                 </div>
             </div>
-        </div>
+            
+            <div class="row">
+                <div class="five columns menu_pict">
+                    <img class="u-max-full-width" src="images/menu_photo.png" alt="メニュー写真">
+                </div>
+                
+                <div class="seven columns menu_description">
+                    <div class="menu_title text_center">
+                        <img class="u-max-full-width menu_name text_center" src="images/menu_text.png" alt="メニューの名前">
+                    </div>
+                    <div class="menu_title_japanese">
+                        <p>チキンティッカ<span>￥９００</span></p>
+                    </div>
+                    <div class="description text_center">
+                        <p>メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="five columns menu_pict">
+                    <img class="u-max-full-width" src="images/menu_photo.png" alt="メニュー写真">
+                </div>
+                
+                <div class="seven columns menu_description">
+                    <div class="menu_title text_center">
+                        <img class="u-max-full-width menu_name text_center" src="images/menu_text.png" alt="メニューの名前">
+                    </div>
+                    <div class="menu_title_japanese">
+                        <p>チキンティッカ<span>￥９００</span></p>
+                    </div>
+                    <div class="description text_center">
+                        <p>メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。メニューの説明が入ります。</p>
+                    </div>
+                </div>
+            </div>
     </section>
     
         <div class="melati_line_2">
@@ -294,16 +356,22 @@
             </div>
         </div>
         
-        <div class="container id=branch_selector">
+        <div class="container">
             <div class="row">
-                <div class="six columns branch_logo">
-                                        
+                <div class="six columns tosayamada_br">
+                    <img class="u-max-full-width" src="images/yamada_logo.png" alt="土佐山田店民家ジャスミン">                    
                 </div>
-                
+                <div class="six columns obiyamachi_br">
+                    <img class="u-max-full-width" src="images/obiyamachi_logo.png" alt="帯屋町店バリジャスミンダイニングバー">                    
+                </div>
             </div>
-            
         </div>
     </section>
+    
+    <div class="melati_line">
+        <img class="u-max-full-width" src="images/melati_line.png">
+    </div>
+    
     
     <section id="our_staff">
         <div class="container">
@@ -350,7 +418,7 @@
             <img class="u-max-full-width" src="images/melati_line.png">
         </div>
     
-    <section id="information">
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
@@ -360,9 +428,29 @@
                         <h3>コース料理もございますのでお気軽にお問合せください。</h3>
                     </div>
                 </div>
-                
             </div>
-            
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <img class="u-max-full-width" src="images/yamada_logo.png" alt="土佐山田店民家ジャスミン">
+                </div>
+                <div class="six columns">
+                    <p>0887-52-9110</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <img class="u-max-full-width" src="images/obiyamachi_logo.png" alt="帯屋町店バリジャスミンダイニングバー">
+                </div>
+                <div class="six columns">
+                    <p>088-823-8311</p>
+                </div>
+            </div>
         </div>
     </section>
     
