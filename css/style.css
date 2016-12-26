@@ -25,12 +25,12 @@ li {
 .melati_line {
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .melati_line_2 {
     text-align: center;
-    padding-top: 80px;
+    margin-top: 80px;
 }
 
 .section_title {
@@ -40,8 +40,13 @@ li {
 }
 
 #header_in{
-  background-color: #004d25;
-  border-bottom: 1px solid #fff9f5;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    line-height: 1;
+    background-color: #004d25;
+    border-bottom: 1px solid #fff9f5;
 }
 
 #header_in ul{
@@ -51,13 +56,18 @@ li {
     justify-content: space-between;
 }
 
-#header_in li {
+#header_in i {
     color: #fff9f5;
-    font-size: 44px;
+    font-size: 30px;
 }
 
 #header_in a {
     color: #fff9f5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 #header_in a:link {
@@ -69,31 +79,6 @@ li {
     text-decoration: none;
 }
 
-.navi_btn i {
-    font-size: 35px;
-    padding: 0 5px;
-    border: 2px solid;
-    border-radius: 10px; 
-}
-
-#grand_navi nav{
-    background-color: #004d25;
-}
-
-#grand_navi li{
-    padding: 30px 0;
-    border-bottom: 1px solid #fff9f5;
-}
-#grand_navi a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff9f5;
-    font-size: 30px;
-}
-
-#grand_navi a:hover {
-    opacity: 0.75;
-}
 
 #top_slide_area {
     background-image: url(../images/title_back.jpg);
@@ -156,14 +141,23 @@ li {
     text-decoration:underline;
 }
 
-#branch_introduction .columns {
-    margin: 0;
+#branch_introduction a:link{
+    color: #fff9f5;
+    text-decoration: none;
+}
+
+#branch_introduction a:hover{
+    color: #fff9f5;
+    text-decoration: underline;
+    opacity: 0.75;
 }
 
 .branch_pict {
+    width: 97%;
     display: block;
     text-align: center;
-    padding: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .menu_select ul{
@@ -190,40 +184,6 @@ li {
 .menu_select a:hover {
     color: #004d25;
     text-decoration: underline;
-}
-
-.black_boad{
-    background-image: url(../images/black_boad.png);
-    color: #fff9f5;
-    padding: 40px;
-    height: 1230px;
-}
-
-.tosayamada_menu{
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-.menu_pict{
-    display: block;
-    padding-bottom:30px;
-}
-.menu_description {
-    padding-top:50px;
-    padding-left: 20px;
-}
-.menu_title_japanese p {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: right;
-    padding-bottom: 20px;
-    padding-right: 100px;
-}
-.menu_title_japanese span{
-    padding-left: 10px;
-}
-.description p {
-    font-size: 1.8rem;
 }
 
 .google_map {
@@ -268,7 +228,7 @@ li {
 
 .tosayamada_br,.obiyamachi_br {
     display: block;
-    padding-top: 80px;
+    margin-top: 80px;
 }
 .obiyamachi_br{
     float: right;
@@ -291,6 +251,16 @@ li {
     font-size: 1.5rem;
 }
 
+.info_text {
+    margin-bottom: 80px;
+}
+
+.contact_yamada {
+    margin-bottom: 80px;
+}
+.contact_yamada,.contact_obiyamachi p {
+    font-size: 4rem;
+}
 footer .copy{
     background-color: #004d25;
     padding: 20px 0 10px 0;
